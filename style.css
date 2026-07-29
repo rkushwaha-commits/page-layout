@@ -26,8 +26,34 @@
     flex-basis:16%;
 
     display:flex;
+    flex-direction: column;
 }
 
 .product-image img{
     max-width: 100%;
+}
+
+.product-info{
+    margin-top:auto;
+}
+
+@media (max-width: 920px) {
+  .product-card {
+    flex: 1 21%;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    flex: 1 46%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-filter {
+    flex-direction: column;
+  }
+  .sort {
+    align-self: flex-start;
+  }
 }
